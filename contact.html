@@ -6,55 +6,85 @@
     <meta name="author" content="Zaynab">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="500">
-    <title>DreamVista Contact Us Page</title>
+    <title>DreamVista | Contact</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Inline CSS to apply a different background image to this page -->
+    <style>
+      body{
+          width: 100%;
+          background-image:  linear-gradient(rgba(49, 47, 90, 0.75),rgba(0,0,0,0.3)), url(images/background-images/background-image-2.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: left;
+      }
+  </style>
 </head>
 
-<header>
-  <h1> Contact Us Page</h1>
-  <img src="images/DreamVista-Logo.png" class="logo" alt="DreamVista Logo" width="100" height="100" >
-</header>
-
-<!-- CONTACT US INFORMATION SECTION -->
-
 <body>
-  <h2>Contact Us</h2>
-  <p>If you need assistance, please reach out to us:</p>
-  <ul>
-    <li>Phone number: +1234567890</li>
-    <li>Email: help@dreamvistaadventures.com</li>
-    <li>Terms & Conditions</li>
-    <li>Rules for the theme park</li>
-  </ul>
-</body>
+  <header>
+    <!-- <a href="index.html" class="cpLogo"><img src="images/DreamVista-Logo.png" class="logo" id="logo" alt="DreamVista Logo" width="100" height="100"></a>
+    <h1 class="cpHeading">Contact Us</h1> -->
 
-<!-- FAQS SECTION -->
+    <div class="navbar">
+      <!-- Navigation Bar Options -->
+      <nav>
+          <div class="hpLogoSection">
+              <a href="index.html"><img src="images/DreamVista-Logo.png" id="logo" class="hpLogo" alt="DreamVista Logo" width="100" height="100"></a>
+              <button class="openingHours">Opening Hours</button>
+          </div>
+          <ul>
+              <li><a href="#"></a> </li>
+              <li><a href="index.html">Home</a> </li>
 
-<body>
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-item">
-    <h3>What are the park's opening hours?</h3>
-    <p>DreamVista Adventures is open from 9 AM to 9 PM, seven days a week.</p>
+              <li><a href="store.html">Store</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <button class="bookTickets">Book Tickets</button>
+          </ul>
+      </nav>
   </div>
-  
-  <div class="faq-item">
-    <h3>Are there any age restrictions for the rides?</h3>
-    <p>Yes, some rides have age and height restrictions for safety reasons. Please check the specific ride information before queueing.</p>
-  </div>
+  </header>
 
-  <div class="faq-item">
-    <h3>Can I bring my own food into the park?</h3>
-    <p>Guests are not permitted to bring outside food or beverages into the park, with exceptions for dietary needs and baby food.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>Do you offer discounts for large groups?</h3>
-    <p>Yes, we offer discounts for groups of 15 or more.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>What measures are taken for guest safety and security?</h3>
-    <p>We prioritize the safety and security of our guests with measures including on-site security personnel, regular safety audits, and compliance with all health and safety regulations.</p>
-  </div>
+  <!-- CONTACT US INFORMATION SECTION -->
+  <section class="cpInfo_section">
+    <p>If you need assistance, please reach out to us:</p>
+    <ul>
+      <li>Phone number: +1234567890</li>
+      <li>Email: help@dreamvistaadventures.com</li>
+      <li>Terms & Conditions</li>
+      <li>Rules for the theme park</li>
+    </ul>
+  </section>
+  <!-- FAQS SECTION -->
+  <h2 class="faqHeading">Frequently Asked Questions (FAQs)</h2>
+  <section class="cpFAQ_section">
+    <ul>
+      <li class="faq-item">
+          <h3>What are the park's opening hours?</h3>
+          <p>DreamVista Adventures is open from 9 AM to 9 PM, seven days a week.</p>
+      </li>
+      <br>
+      <li class="faq-item">
+        <h3>Are there any age restrictions for the rides?</h3>
+        <p>Yes, some rides have age and height restrictions for safety reasons. Please check the specific ride information before queueing.</p>
+      </li>
+      <br>
+      <li class="faq-item">
+        <h3>Can I bring my own food into the park?</h3>
+        <p>Guests are not permitted to bring outside food or beverages into the park, with exceptions for dietary needs and baby food.</p>
+      </li>
+      <br>
+      <li class="faq-item">
+        <h3>Do you offer discounts for large groups?</h3>
+        <p>Yes, we offer discounts for groups of 15 or more.</p>
+      </li>
+      <br>
+      <li class="faq-item">
+        <h3>What measures are taken for guest safety and security?</h3>
+        <p>We prioritize the safety and security of our guests with measures including on-site security personnel, regular safety audits, and compliance with all health and safety regulations.</p>
+      </li>
+    </ul>
+  </section>
 </body>
 
 </html>
