@@ -1,109 +1,327 @@
-*{
+/* Custom Fonts ------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Indie+Flower&family=Jost:wght@400;500&family=Lobster&family=Niconne&display=swap');
+
+/* Common CSS ------------------------------------------------- */
+
+body{
+    font-family: 'Jost', sans-serif;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
 }
 
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(49, 47, 90, 0.85),rgba(0,0,0,0.85)), url(Images/background_holder2.jpg);
-    background-size: cover;
-    background-position: center;
+h1{
+    font-family: 'Lobster', sans-serif;
 }
 
-.navbar{
-    width: 90%;
-    margin: auto;
-    padding: 35px 0;
+p{
+    font-family: 'Jost', sans-serif;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    margin: 15px;
+    width: 130px;
+    height: 130px;
+}
+
+
+/* Home Page Elements ------------------------------------------------- */
+/* NAVBAR */
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 30px 0px 30px;
 }
 
-.logo{
-    width: 160px;
+.hpLogoSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.openingHours{
+    margin: 20px;
+    background: rgb(220, 232, 58);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+nav ul li a:hover{
+    color: orange;
+    transition: 0.2s;
+}
+
+.navbar button{
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Exo 2';
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.bookTickets{
+    background: orange;
+}
+
+.navbar button:hover{
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: ' ';
-    height: 5px;
-    width: 0;
-    background: orange;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.25s;
-}
-
-.navbar ul li:hover:after{
+/* HERO SECTION */
+/* Background Image */
+.banner{
     width: 100%;
+    height: 45em;
+    background-image:  linear-gradient(rgba(49, 47, 90, 0.75),rgba(0,0,0,0.3)), url(images/background-images/background-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Text Content */
+.hero-section-text{
+    color: antiquewhite;
+}
+
+.motto{
+    color: antiquewhite;
 }
 
 .content{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
-    color: white;
+    font-size: 2em;
 }
 
-.content h1{
-    font-size:  70px;
-    margin-top: 80px;
-}
-
-.content p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-}
-
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: solid orange;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-span{
-    background: rgba(255,165,0,0.5);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-button:hover span{
-    width: 100%;
-}
-
-button:hover{
+.heroSectionButton{
     border: none;
+    padding: 12px 30px;
+    font-family: 'Exo 2';
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.heroSectionButton:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* Store Elements ------------------------------------------------- */
+
+.spHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0.5rem;
+}
+
+/* CLOTHES SECTION */
+#spClothes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#spClothes h4{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    background-color: bisque;
+}
+
+.tshirt{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+    background: white
+}
+
+.tshirt:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.tshirt img{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#spClothes button{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+/* TOYS SECTION */
+#spToys{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#spToys h4{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    background-color: bisque;
+}
+
+.toy{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+    background: white
+}
+
+.toy:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.toy img{
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+}
+
+#spToys button{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+/* EXCLUSIVE OFFERS SECTION */
+#spExclusiveOffers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer{
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#spExclusiveOffers button{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: red;
+}
+
+
+/* Contact Page Elements ------------------------------------------------- */
+.cpHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0.5rem;
+ }
+ 
+.cpInfo_section{
+    margin: 40px;
+    font-size: 1.1rem;
+    color: bisque;
+}
+
+.cpInfo_section p{
+    color: bisque;
+}
+
+.faqHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.cpFAQ_section{
+    background-color: rgba(255, 228, 196, 0.9);
+    margin: 1%;
+    padding: 0.7rem;
+    padding-bottom: 1.6rem;
+    border-radius: 10px;
+}
+
+.faq-item h3{
+    font-weight: 500;
 }
