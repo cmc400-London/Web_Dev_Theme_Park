@@ -6,75 +6,117 @@
     <meta name="author" content="Vivek Kalolia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="600">
-    <meta name="keywords" content="DreamVista Shopping, DreamVista Shopping Page,
-    DreamVista Shop, DreamVista Adventures Shop, DreamVista Toys, DreamVista Tickets, Buy DreamVista Tickets">
-    <title>DreamVista Store</title>
+    <meta name="keywords" content="DreamVista Shopping, DreamVista Shopping Page, DreamVista Shop, DreamVista Adventures Shop, DreamVista Toys, DreamVista Tickets, Buy DreamVista Tickets">
+    <title>DreamVista | Store</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Inline CSS to apply a different background image to this page -->
+    <style>
+        body{
+            width: 100%;
+            background-image:  linear-gradient(rgba(49, 47, 90, 0.75),rgba(0,0,0,0.3)), url(images/background-images/background-image-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    </style>
+
 </head>
 <body>
 <header>
-    <h1>DreamVista Store</h1>
-    <img src="images/DreamVista-Logo.png" alt="DreamVista Logo" width="100" height="100">
+    <!-- <a href="index.html"> <img src="images/DreamVista-Logo.png" id="logo" alt="DreamVista Logo" width="100" height="100"></a>
+    <h1 class="spHeading">DreamVista Store</h1> -->
+
+    <div class="navbar">
+        <!-- Navigation Bar Options -->
+        <nav>
+            <div class="hpLogoSection">
+                <a href="index.html"><img src="images/DreamVista-Logo.png" id="logo" class="hpLogo" alt="DreamVista Logo" width="100" height="100"></a>
+                <button class="openingHours">Opening Hours</button>
+            </div>
+            <ul>
+                <li><a href="#"></a> </li>
+                <li><a href="index.html">Home</a> </li>
+
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button class="bookTickets">Book Tickets</button>
+            </ul>
+        </nav>
+    </div>
 </header>
 ​
 <!-- sp = Shopping Page -->
 <div id="spItems">
+    <!-- Clothes Section -->
     <div id="spClothes">
-        <div class="tshirt1">
+        <div class="tshirt">
             <!-- Orange T-shirt -->
             <img src="images/Clothes/orange-shirt.png" alt="Orange T-Shirt - DreamVista" width="300" height="300">
-            <p>$9.99</p>
+            <h4>$9.99</h4>
+            <button>Add to Cart</button>
         </div>
-        <div class="tshirt2">
+        <div class="tshirt">
             <!-- Blue T-shirt -->
             <img src="images/Clothes/blue-shirt.png" alt="Blue T-Shirt - DreamVista" width="300" height="300">
-            <p>$14.99</p>
+            <h4>$14.99</h4>
+            <button>Add to Cart</button>
         </div>
-        <div class="tshirt2">
+        <div class="tshirt">
             <!-- Purple T-shirt -->
             <img src="images/Clothes/purple-shirt.png" alt="Purple T-Shirt - DreamVista" width="300" height="300">
-            <p>$14.99</p>
+            <h4>$14.99</h4>
+            <button>Add to Cart</button>
         </div>
     </div>
+
+    <!-- Toys Section -->
     <div id="spToys">
-        <div class="plushyToys">
+        <div class="toy">
             <!-- Teddy Bear Toy-->
             <img src="images/Toys/teddy-bear.png" alt="Teddy Bear Toy - DreamVista" width="300" height="300">
-            <p>$19.99</p>
+            <h4>$19.99</h4>
+            <button>Add to Cart</button>
         </div>
-        <div class="vehicleToys">
+        <div class="toy">
             <!-- Red Car Toy-->
             <img src="images/Toys/red-car.png" alt="Red Car Toy - DreamVista" width="300" height="300">
-            <p>$49.99</p>
+            <h4>$49.99</h4>
+            <button>Add to Cart</button>
         </div>
-        <div class="poolToys">
+        <div class="toy">
             <!-- Flamingo Lifebuoy Toy-->
             <img src="images/Toys/flamingo-lifebuoy.png" alt="Flamingo Lifebuoy Toy - DreamVista" width="300" height="300">
-            <p>$29.99</p>
+            <h4>$29.99</h4>
+            <button>Add to Cart</button>
         </div>
     </div>
+
+    <!-- Exclusive Offers Section -->
     <div id="spExclusiveOffers">
-        <div class="magicCardPass">
+        <div class="offer">
             <!-- Magic Card Pass-->
-            <img src="images/Exclusive Offers & Ticket/magic-card-pass.png" alt="DreamVista Magic Card Pass" width="400" height="400">
+            <img src="images/exclusive-offers-and-ticket/magic-card-pass.png" alt="DreamVista Magic Card Pass" width="400" height="400">
             <!-- Button which adds Magic Card to the cart-->
             <button>BUY EXCLUSIVE CARD</button>
         </div>
-        <div class="buyTickets">
-            <div class="frontTicket">
+        <div class="offer">
+            <div class="offer">
                 <!--Front Ticket View-->
-                <img src="images/Exclusive Offers & Ticket/Tickets/Front.png" alt="Buy Tickets - Front View" width="500" height="160">
+                <img src="images/exclusive-offers-and-ticket/Tickets/Front.png" alt="Buy Tickets - Front View" width="500" height="160">
             </div>
-            <div class="backTicket">
+            <div class="offer">
                 <!-- Back Ticket View-->
-                <img src="images/Exclusive Offers & Ticket/Tickets/Back.png" alt="Buy Tickets - Back View" width="500" height="160">
+                <img src="images/exclusive-offers-and-ticket/Tickets/Back.png" alt="Buy Tickets - Back View" width="500" height="160">
             </div>
             <!-- Button which adds Ticket(s) to the cart-->
             <button>BUY TICKETS</button>
         </div>
-        <div class="discountSection">
+        <div class="offer">
             <div class="activeOffer">
                 <!-- Special Holiday Season Offer-->
-                <img src="images/Exclusive Offers & Ticket/discount-offer.png" alt="Discount Offer - DreamVista" width="400" height="400">
+                <a href="#spItems"><img src="images/exclusive-offers-and-ticket/discount-offer.png" alt="Discount Offer - DreamVista" width="400" height="400"></a>
+                
             </div>
         </div>
     </div>
